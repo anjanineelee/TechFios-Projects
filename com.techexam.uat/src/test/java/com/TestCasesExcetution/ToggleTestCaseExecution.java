@@ -26,11 +26,23 @@ public class ToggleTestCaseExecution extends Testbase{
 	@Test
 	public void clicktoggleTestpage() throws Exception
 	{
-		ttp.verifyToggleall();
+		ttp.ValidateChecks();
 		Thread.sleep(6000);
 		
 	}
-		
+	@Test
+	public void clickremove() throws Exception
+	{
+		ttp.validateRemove();
+		Thread.sleep(2000);
+	}
+	
+	@Test 
+	public void verifyremoveall()
+	{
+		ttp.validateRemoveAll();
+		driver.navigate().back();
+	}
 	@After
 	public void TearDown()
 	{
