@@ -53,69 +53,7 @@ public class toggleTestpage extends Testbase{
 
 
 
-	//	public static void selectEvent(String eventName) { 
-	//	//	WebElement eventLink = Browser.instance.findElement(By.xpath("//td[2]/a[1][contains(text(), '"+eventName+"')]")); 
-	//		WebElement eventLink = driver.findElement(By.xpath("//td[2]/a[1][contains(text(), '"+eventName+"')]"));
-	//		//eventLink.click(); 
-	//	
-	//		if (eventLink.isSelected()) 
-	//		{
-	//			System.out.println("check passed" );			
-	//		}
-	//		else
-	//		{
-	//			System.out.println("its failed");
-	//		}
-	//
-	//	}
-	//	
-
-	//public  void verifyToggleall() throws Exception
-	//{
-//		Toggleall.click();
-
-		//		selectEvent(todo1,"Ele1");
-		//		selectEvent(todo2,"Ele2");
-		//		selectEvent(todo3,"Ele3");
-		//		selectEvent(todo4,"Ele4");
-		//		selectEvent(todo5,"Ele5");
-		//		selectEvent(todo6,"Ele6");
-		//		selectEvent(todo7,"Ele7");
-
-		//ValidateChecks();
-		//Toggleall.click();
-		//todo7.click();// to select particular webelemt
-		//remove.click();// then it will removed the selected webelement
-		//Thread.sleep(3000);
-		//driver.navigate().back();// to navigate back to the home page
-
-		//complete.click();// it will click on complete button
-
-
-
-
-
-
-
-		//		if (todo1.isSelected()) 
-		//		{
-		//			System.out.println("check passed" );			
-		//		}
-		//		else
-		//		{
-		//			System.out.println("its failed");
-		//		}
-
-
-		//		WebElement chkFBPersist = Toggleall;							
-		//        for (int i=0; i<2; i++) {											
-		//            chkFBPersist.click (); 			
-		//            System.out.println("Facebook Persists Checkbox Status is -  "+ chkFBPersist.isSelected());
-		//            todo3.click();
-
-
-
-	//}
+	
 
 	public void ValidateChecks() {
 		Toggleall.click();
@@ -123,9 +61,7 @@ public class toggleTestpage extends Testbase{
 		for(WebElement checkbox : checkboxes)
 		{
 
-			//System.out.println(checkbox.getAttribute("name"));
-			//System.out.println(checkbox.getAttribute("selected"));
-			//System.out.println(Integer.toString(checkboxes.size()));
+			
 			if (checkbox.getAttribute("selected").equals("true")) 
 			{
 				System.out.println("check passed "+ checkbox.getAttribute("name"));			
@@ -140,16 +76,7 @@ public class toggleTestpage extends Testbase{
 	}
 
 
-	//	public static void selectEvent(WebElement chkWebEle, String eName) {
-	//		if (chkWebEle.isSelected()) 
-	//		{
-	//			System.out.println("check passed "+ eName);			
-	//		}
-	//		else
-	//		{
-	//			System.out.println("its failed " + eName);
-	//		}
-	//	}
+	
 	public void validateRemove() {
 		List<WebElement> checkboxes = driver.findElements(By.xpath("//input[@type='checkbox']"));
 		String test = "Y";
@@ -200,13 +127,7 @@ public class toggleTestpage extends Testbase{
 
 		}
 
-		//		for(WebElement checkbox : checkboxes)
-		//		
-		//		String myremove = checkbox.getAttribute("name");
-		//		
-		//		System.out.println("REmoved this check box all execpt toggle all"+ myremove);
-		//		checkboxes.isEmpty();
-
+		
 	}
 
 

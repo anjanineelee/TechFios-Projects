@@ -21,7 +21,7 @@ public class testbase {
 	public static WebDriver driver;
 	public static final Logger logger = Logger.getLogger(testbase.class.getName()); 
 	public static String localdirectory = System.getProperty("user.dir");
-	
+	String yyy = "";
 	
 	public testbase()// constructor
 	{
